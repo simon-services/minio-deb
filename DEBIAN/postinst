@@ -1,0 +1,4 @@
+#!/bin/bash
+
+chmod +x /opt/github.com/minio/minio/bin/minio
+supervisorctl update minio
