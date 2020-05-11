@@ -13,7 +13,7 @@ build: clean minio
 	chmod +x opt/github.com/minio/minio/bin/minio
 	rm -rf minio
 	rsync -ax --exclude tmp ./ tmp/
-	rm -rfv tmp/Makefile tmp/.git* tmp/LICENSE tmp/README.md
+	rm -rfv tmp/Makefile tmp/.git tmp/.gitignore tmp/LICENSE tmp/README.md
 	dpkg-deb --build tmp minio-0.0.1-amd64.deb
 	rm -rf tmp
 
